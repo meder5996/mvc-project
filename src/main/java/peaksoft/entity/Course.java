@@ -47,7 +47,7 @@ public class Course {
     private Instructor instructor;
 
     @OneToMany(cascade = CascadeType.ALL,
-    fetch = FetchType.LAZY, mappedBy = "")
+    fetch = FetchType.LAZY, mappedBy = "tasks")
     private List<Lesson> lessons;
 
 }
